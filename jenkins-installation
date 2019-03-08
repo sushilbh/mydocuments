@@ -32,5 +32,5 @@ Add path
 export PATH=$PATH:/opt/apache-maven-3.6.0/bin
 
 
-hello
+
 
