@@ -1,0 +1,32 @@
+########
+##Installation of Docker in ubuntu##
+step 1: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+step2: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+step 3: sudo apt-get update
+step4: sudo apt-get install -y docker-ce
+check docker version
+   docker --version
+   
+   
+ #### installation of docker-compose###
+> tool for defining and running multi container docker applications
+> use yaml files to configure application services. (docker-compose.yml)
+> can start all services with a single comand: docker-compose up
+> can sstop all sevices with a single command: docker-compose down
+> can scale up selected services when required.
+
+step1: install docker compose>>> once you have installled in your machine docker compose install automatially in mac and window. for that
+go to terminal and run >> docker-compose -v ->it will show your docker compse version OR docer-compose version
+
+FOR LINUX
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+mkdir my_appcd my_app
+cd my_app
+nano docker-compose.yml
+
+
+
+######OR FOLLOW FOLLOWING LINK#####
+https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/

@@ -1,0 +1,24 @@
+---
+- name: Launching an EC2 machine
+  hosts: all
+  become: true
+  vars:
+    ACCESS: get from IAM
+    SECRET: mysecretkey
+    REGION: us-east-1
+    MYKEY: ramhari.pem
+  tasks:
+    - name: Launching an EC2 Machine for my webserver  
+      ec2:
+        aws_access_key: "{{ ACCESS }}"
+        aws_secret_key: "{{ SECRET }}"
+        aws_region: "{{ REGION }}"
+        key_name: "{{ MYKEY }}"
+        instance_type: t2.micro
+        wait: yes
+        count: 1
+        instance_tags:
+          Name: webservers-loadbalancer
+        vpc_subnet_id: subnet-3a885f66
+        assign_public_ip: yes
+      register: output
