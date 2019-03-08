@@ -1,0 +1,33 @@
+How-to articles
+===============
+##JENKINS
+—————
+Installation of OpenJDK
+1. Install the OpenJDK 8:
+2. sudo yum install java-1.8.0-openjdk
+3. If you have more than one Java version installed on your system use the following command to switch versions:
+4. sudo alternatives --config java
+5. Make sure your system is using the correct JDK:
+6. java -version 
+Installation of Jenkins
+* sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+* sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+* sudo yum install -y jenkins
+
+To check the STATUS of Jenkins:
+Systemctl status jenkins
+Systemctl restart jenkins
+* sudo service jenkins start/stop/restart
+
+.jenkins will be /var/lib/jenkins
+Workspace will be  /var/lib/jenkins/workspace
+Jenkins Home
+/etc/sysconfig/jenkins >>> if you want to change the port 
+/var/lib/jenkins/secrets/initialAdminPassword
+
+Maven Installation (In order to run maven java should be installed)
+http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+sudo tar -zxf apache-maven-3.6.0-bin.tar.gz
+Add path
+export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+
