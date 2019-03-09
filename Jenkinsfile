@@ -1,7 +1,7 @@
 node('maven'){
     def mvnhome = tool name: 'mvn360', type: 'maven'
     stage('checkout'){
-        echo "clonning the rep"
+        echo "clonning the repos"
     }
    
     stage('package'){
