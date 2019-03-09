@@ -30,7 +30,6 @@ http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.6.0/binaries/apache-maven
 sudo tar -zxf apache-maven-3.6.0-bin.tar.gz
 Add path
 export PATH=$PATH:/opt/apache-maven-3.6.0/bin
-.
 
 
 
