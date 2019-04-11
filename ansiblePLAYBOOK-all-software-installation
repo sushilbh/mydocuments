@@ -57,7 +57,7 @@
       - name: copying the jdk file to target machine
         copy:
           src: /opt/jdk-8u201-linux-x64.tar.gz
-          dest: /opt/jdk-8u201-linux-x64.tar.gz
+          dest: /home/ec2-user/jdk-8u201-linux-x64.tar.gz
           mode: 0644
 
       - name: untarring the tar file on target
