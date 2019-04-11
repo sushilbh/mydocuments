@@ -13,7 +13,7 @@ ansible1 >>>> is the folder you want to download
 
 
 
-####Transfer file from local machine to server
+####Transfer file from local machine to server#######
 scp -i ramhari.pem ~/Download abc.txt ec2-user@IP:/tmp
 Where,
 scp -i >>>command
