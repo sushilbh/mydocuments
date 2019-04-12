@@ -6,6 +6,7 @@ Where,
 scp -i >>>command
 ramhari.pem >>key name
  -r >>> for folder no need for file
+ ec2-user >>> name of the user
 Ip >>public ip of the machine from where you want to download the files/folder
 : >>>colon
 /home/ec2-user/   >>>>> path of the folder/file
