@@ -30,6 +30,34 @@ http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.6.0/binaries/apache-maven
 sudo tar -zxf apache-maven-3.6.0-bin.tar.gz
 Add path
 export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+============================================================================================================
+JENKINS
+If you forget password Jenkins Home >>> /var/lib/jenkins>>config.xml>>> go inside and find security>> use security is true make it false and restart jenkins.
+
+Once you build the job and execute package stage it will create .jar file inside workspace/pipeline/target. 
+Now,  another step will be send to artifacts, and create surfer reports.
+For artifacts>>> goto pipeline syntax>> select artifacts> File to archive will be >>> target/**/*
+In advance option select
+Use default excludes
+Treat include and exclude patterns as case sensitive
+ When you do artifact step in test stage before package stage, you will get watch symbol in building. now, Junit test test functionality of program.
+Choose junit in pipeline syntax and Test report XMLs>>>>target/surefire-reports/*.xml
+
+
+
+
+
+
+After package state you will perform following steps
+1. Archive >>>target/surefire-reports/* or target/surefire-reports/*.xml OR **/target/*
+2. Junit test >>> target/surefire-reports/*.xml
+3. Generate surefire reports(you can add in test step also or can create new stage) this will create site dir inside target dir 
+4. Now publish that surefire report in html. For that install html publish plugin in (pipeline manage plugin) then HTML directory to archive
+HTML directory to archive>>>target/site/
+Index page[s]>>>surefire-report.html
+5. 
+
+
 
 
 
