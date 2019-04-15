@@ -35,7 +35,7 @@ https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 ======================================================================================================================
 DOCKER
 ##Purging All Unused or Dangling Images, Containers, Volumes, and Networks
-
+* sudo systemctl restart docker >>> to restart docker
 * service docker start >> to start docker
 * service docker stop >> to stop docker
 * sudo user mod -a -G docker ec2-user  (where, docker is group and ec2-user is user) 
