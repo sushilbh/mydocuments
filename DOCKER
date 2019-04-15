@@ -35,6 +35,8 @@ https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 ======================================================================================================================
 DOCKER
 ##Purging All Unused or Dangling Images, Containers, Volumes, and Networks
+
+* IMPORTANT NOTE: to change the content of file inside container >> apt-get update >> apt-get install vim >> change the content
 * sudo systemctl restart docker >>> to restart docker
 * service docker start >> to start docker
 * service docker stop >> to stop docker
