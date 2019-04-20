@@ -7,35 +7,36 @@
    docker --version
    
    
- #### installation of docker-compose###
-> tool for defining and running multi container docker applications
-> use yaml files to configure application services. (docker-compose.yml)
-> can start all services with a single comand: docker-compose up
-> can sstop all sevices with a single command: docker-compose down
-> can scale up selected services when required.
+ **installation of docker-compose**
+* tool for defining and running multi container docker applications
+* use yaml files to configure application services. (docker-compose.yml)
+* can start all services with a single comand: docker-compose up
+* can sstop all sevices with a single command: docker-compose down
+* can scale up selected services when required.
 
-step1: install docker compose>>> once you have installled in your machine docker compose install automatially in mac and window. for that
-go to terminal and run >> docker-compose -v ->it will show your docker compse version OR docer-compose version
+* step1: install docker compose>>> once you have installled in your machine docker compose install automatially in           mac and   window. for that
+* go to terminal and run >> docker-compose -v ->it will show your docker compse version OR docer-compose version
 
-FOR LINUX
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-docker-compose --version
-mkdir my_appcd my_app
-cd my_app
-nano docker-compose.yml
+**FOR LINUX**
+* sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+* sudo chmod +x /usr/local/bin/docker-compose
+* docker-compose --version
+* mkdir my_appcd my_app
+* cd my_app
+* nano docker-compose.yml
 
 
 
 ######OR FOLLOW FOLLOWING LINK#####
 https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 ....
----------------------------------------------------------------------------------------------------------------------
-======================================================================================================================
+
 DOCKER
-##Purging All Unused or Dangling Images, Containers, Volumes, and Networks
+
+**Purging All Unused or Dangling Images, Containers, Volumes, and Networks
 
 * IMPORTANT NOTE: to change the content of file inside container >> apt-get update >> apt-get install vim >> change the content
+
 * sudo systemctl restart docker >>> to restart docker
 * service docker start >> to start docker
 * service docker stop >> to stop docker
