@@ -19,7 +19,7 @@
 ** MAKING  USERS AND GROUPS**
 * useradd superman	>>> Make superman  as user
 * cat /etc/passwd	>>> See the user
-* groupadd sperheros 	>>> Make superheros as group           g = primary group , G = secondary group
+* groupadd sperheros 	>>> Make superheros as group                                  g = primary group , G = secondary group
 * cat /etc/group	  >>> To see the group
 * useradd -G superheros ironman	>>> Adding ‘new user’ ironman in existing secondary group superheros
 * usermod -G superheros superman	 >>> Adding ‘existing user’ superman in secondary group superheros
