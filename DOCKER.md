@@ -1,4 +1,4 @@
-####Installation of Docker in ubuntu
+#### Installation of Docker in ubuntu
 * step 1: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 * step2: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 * step 3: sudo apt-get update
