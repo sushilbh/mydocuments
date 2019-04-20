@@ -99,21 +99,23 @@ Decoupling container from storage
 Share volume (storage/data) among different containers
 Attach volume to containers
 On deleting container volume does not delete.
+
 1. docker volume —helpd
 2. docker volume create myvolume  (where, myvolume is volume name) 
 3. docker volume ls >> list the volume
 4. docker volume inspect myvolume >>> show the details
 5. Docker volume rm myvolume >>> to remove volume
-Use of Docker volume to create container>>
-docker container create --name jenkinsrun -it --mount source=myvol1,target=/demo-test jenkins
-18.223.124.5
-Imp
-docker pull jenkins >> comes from docker hub
-docker run -p 8080:8080 -p 50000:50000 jenkins (where, first 8080 is host port, second 8080 is container port and 50000:50000 is API)
-docker run --detach  --name myjenkins -v myvolume:/var/jenkis_home -p 8080:8080 -p 50000:50000 jenkins 
+
+Use of Docker volume to create container:
+
+* docker container create --name jenkinsrun -it --mount source=myvol1,target=/demo-test jenkins
+
+* docker pull jenkins >> comes from docker hub
+* docker run -p 8080:8080 -p 50000:50000 jenkins (where, first 8080 is host port, second 8080 is container port and 50000:50000 is API)
+* docker run --detach --name myjenkins -v myvolume:/var/jenkis_home -p 8080:8080 -p 50000:50000 jenkins 
 (Where, myvolume get data from /var/jenkins_home)
-- When you run this command jenkins will run where >> create jobs>>testjob>>freestyle>> execute command >>’ls’  >>apply and save
-- Now if you run this command again with different name in different port but can use same volume ie,
+* When you run this command jenkins will run where >> create jobs>>testjob>>freestyle>> execute command >>’ls’  >>apply and save
+* Now if you run this command again with different name in different port but can use same volume ie,
 Docker run -name myjenkins1 -v myvolume:/var/jenkins_home -p 9090:8080 -p 60000:50000 jenkins >> it will also run and it will have same job inside jenkins. 
 
 Docker swarm
