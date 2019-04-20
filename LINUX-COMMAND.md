@@ -1,6 +1,6 @@
-####
-# LINUX COMMANDS
-cd ../../..	 >>> Go back 3 parent directories
+
+#### LINUX COMMANDS
+* cd ../../..	 >>> Go back 3 parent directories
 cd -	         >>> Go the previous dir. (where were you into)
 mkdir -p first/second/third >>> Create parent directories
 cd -p first/second/third	>>> Go third dir. at once.
