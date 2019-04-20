@@ -49,15 +49,15 @@ DOCKER
 * docker images purge >> remove dangling images
 * docker images -a |  grep "pattern" >> list images according to a pattern
 * docker images -a | grep "pattern" | awk '{print $3}' | xargs docker rmi >> remove images according to a pattern
-*  docker rmi $(docker images -a -q) >> removing all images
-*  Docker ps -a >> show the list of all container
-*  docker rm ID_or_Name ID_or_Name >> removing a container
-*   docker ps -a -f status=exited >> list all exited container
-*   docker rm $(docker ps -a -f status=exited -q) >> remove all exited container
-*   docker rm -f container id >>> to remove running container
-*   docker volume ls >> list the docker volume
-*   docker volume rm volume_name >> remove the volume
-*   docker volume prune >> removing dangling volume
+* docker rmi $(docker images -a -q) >> removing all images
+* docker ps -a >> show the list of all container
+* docker rm ID_or_Name ID_or_Name >> removing a container
+* docker ps -a -f status=exited >> list all exited container
+* docker rm $(docker ps -a -f status=exited -q) >> remove all exited container
+* docker rm -f container id >>> to remove running container
+* docker volume ls >> list the docker volume
+* docker volume rm volume_name >> remove the volume
+* docker volume prune >> removing dangling volume
 
 Dockerfile:
 -------------
