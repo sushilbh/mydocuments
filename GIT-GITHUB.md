@@ -1,4 +1,4 @@
-####GIT-GITHUB
+#### GIT-GITHUB
 
 * Git init
 * git pull <url> <pull files from existing repo>
