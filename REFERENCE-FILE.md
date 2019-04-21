@@ -17,6 +17,15 @@ Download files from server to your local machine
 
 Deploy .jar or .war file to another server or S3 bucket
 -
+##  FIRST: deploy to another server
+* To deploy artifacts to target server >>> choose ssh agent in pipeline syntax >>> add key >>> ssh usernamewith private key >>> Id and Desctiption can be anything >>> user should be the user of target server i,e, ec2-user or deployuser
+* Then, do Keygen in agent machine or another fresh mac terminal >>>> copy public key to .ssh/authorized_keys in target machine>>> give 600 permission to authorized_keys and 700 to .ssh
+
+SECOND: deploy to S3 bucket
+* choose 
+
+
+
 
 Transfer file from local machine to server:
 -
