@@ -1,5 +1,6 @@
-TOMCAT INSTALLATION
+#### TOMCAT INSTALLATION
 Prerequesite >>>jdk
+---------------------
 
 INSTALLATION OF TOMCAT 
 1. go to url> search for tomcat 8 download> copy link address of tomcat tar.gz file>  wget <link> untar the file> 
