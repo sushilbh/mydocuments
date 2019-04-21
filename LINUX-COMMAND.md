@@ -16,11 +16,12 @@
 * ctrl + e 	>>> To o last word of syntax
 * mv mydir myfirstdir	>>> Rename mydir to myfirstdir
 
-** MAKING  USERS AND GROUPS**
+MAKING  USERS AND GROUPS
+---------------------------
 * useradd superman	>>> Make superman  as user
 * cat /etc/passwd	>>> See the user
 * groupadd sperheros 	>>> Make superheros as group                                  g = primary group , G = secondary group
-* cat /etc/group	  >>> To see the group
+* cat /etc/group	  >>> To see the group                                           
 * useradd -G superheros ironman	>>> Adding ‘new user’ ironman in existing secondary group superheros
 * usermod -G superheros superman	 >>> Adding ‘existing user’ superman in secondary group superheros
 * gropuadd  avengers	>>> Adding new group avengers
