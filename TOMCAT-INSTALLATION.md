@@ -15,20 +15,24 @@ INSTALLATION OF TOMCAT
 ln -s /opt/apache-tomcat-8.5.31/bin/startup.sh  /usr/local/bin/tomcatup
 
 ** Where, ln (lowercase L) -s is command 
-              **  /opt/apache-tomcat-8.5.31/bin/startup.sh >> tomcat path
+              **  /opt/apache-tomcat-8.5.31/bin/startup.sh >>> tomcat path
               ** /usr/local/bin/ >>> adding path here 
-             ** tomcatup >> givenname to start tomcat
+             ** tomcatup >>> givenname to start tomcat
 
-For, shutdown,  ln -s /opt/apache-tomcat-8.5.31/bin/shutdown.sh  /usr/local/bin/tomcatdown
- Apache tomcat run default port in 8080 but jenkins also run in 8080 so to change the tomcat port>>>
-Go inside >> opt/apache-tomcat-8.5.31/conf/server.xml
-vi that server.xml >> connecter port change to 8090 >>connecter executer to 8090 and restart the service for that>> tomcatdown>>> it will stop the tomcat
-             tomcat>> it will start the tomcat
+* For, shutdown,  ln -s /opt/apache-tomcat-8.5.31/bin/shutdown.sh  /usr/local/bin/tomcatdown
+ 
+* Apache tomcat run default port in 8080 but jenkins also run in 8080 so to change the tomcat port>>>
+* Go inside >> opt/apache-tomcat-8.5.31/conf/server.xml
+* vi that server.xml >> connecter port change to 8090 >>connecter executer to 8090 and restart the service for that >> tomcatdown >>> it will stop the tomcat
+* tomcatup >>> it will start the tomcat
+
 To inter manager app
-find / -name context.xml >> it will give the list of the locations where you can find context.xml file in two difference locations
- Once you go inside context.xml in both locations  execute following command in the line start with <Value….
-IN the beginning <!-- <Value
-IN the end of same line /> --> now restart the tomcat and try to access the manager app it will prompt sign in box  
+--------------------
+
+* find / -name context.xml >>> it will give the list of the locations where you can find context.xml file in two difference locations
+* Once you go inside context.xml in both locations  execute following command in the line start with <Value….
+* IN the beginning <!-- <Value
+* IN the end of same line /> --> now restart the tomcat and try to access the manager app it will prompt sign in box  
 NOW,
-To create user with roles >goto terminnal(server)> opt/apache-tomcat-8.5.31/conf/tomcat.users.xml>>
-vi that tomcat.users.xml>> goto end of the page>> in-between tomcat users>>
+* To create user with roles >goto terminnal(server)> opt/apache-tomcat-8.5.31/conf/tomcat.users.xml>>
+* vi that tomcat.users.xml>> goto end of the page>> in-between tomcat users>>
