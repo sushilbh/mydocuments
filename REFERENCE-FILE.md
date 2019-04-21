@@ -30,24 +30,24 @@ Transfer file from local machine to server:
 
 Give root level privilege to deployuser
 -
-sudo useradd deployuser
-cd /etc/sudoers.d >>>  go inside this file
-vi deployuser >>> create deployuser file 
-deployuser    ALL=(ALL)    NOPASSWD:ALL
+* sudo useradd deployuser
+* cd /etc/sudoers.d >>>  go inside this file
+* vi deployuser >>> create deployuser file 
+* deployuser    ALL=(ALL)    NOPASSWD:ALL
 
 Ansible
 -
-Ansible -I hosts db -a “yum install -y git” -k --sudo
-ansible -I hosts db -a “git --version” -k --sudo
+* ansible -I hosts db -a “yum install -y git” -k --sudo
+* ansible -I hosts db -a “git --version” -k --sudo
 
-Sudo useradd deployuser
-Passwd deployuser>> to create password for deployuser
+* Sudo useradd deployuser
+* Passwd deployuser >>> to create password for deployuser
 
-ssh-copy-id ec2-user@public ip of target machine>> to communicate with other machine you don’t have to share public key
-Where,
-ssh-copy-id is command 
-Ec2-user is name of user
-Ip of target machine is target machine public IP
+* ssh-copy-id ec2-user@public ip of target machine >>> to communicate with other machine you don’t have to share public key
+** Where,
+** ssh-copy-id >>> is command 
+** Ec2-user >>> is name of user
+** Ip of target machine >>> is target machine public IP
 
 
-remote_src: true >>> to move file from one destination to another destionation in target machine
+*remote_src: true >>> to move file from one destination to another destionation in target machine
