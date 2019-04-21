@@ -15,6 +15,9 @@ Download files from server to your local machine
 ** ansible1 >>>> is the folder you want to download
 ** . (dot) >>>> here
 
+Deploy .jar or .war file to another server or S3 bucket
+-
+
 Transfer file from local machine to server:
 -
 * scp -i ramhari.pem ~/Download abc.txt ec2-user@IP:/tmp
