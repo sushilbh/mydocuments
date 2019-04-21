@@ -21,8 +21,18 @@ Deploy .jar or .war file to another server or S3 bucket
 * To deploy artifacts to target server >>> choose ssh agent in pipeline syntax >>> add key >>> ssh usernamewith private key >>> Id and Desctiption can be anything >>> user should be the user of target server i,e, ec2-user or deployuser
 * Then, do Keygen in agent machine or another fresh mac terminal >>>> copy public key to .ssh/authorized_keys in target machine>>> give 600 permission to authorized_keys and 700 to .ssh
 
-SECOND: deploy to S3 bucket
-* choose 
+## SECOND: deploy to S3 bucket
+* add some plugin in managejenkins>>manage plugings
+- amazon ec2 plugin
+- amazon S3 bucket credential
+- aws global config plugin
+* Install aws CLI and config it
+Now,
+* create s3 bucket
+* choose withcredential:bind credential... in pipeline syntax >>> bindings >>> add >>> aws access key and secret key >> add key >>> choose aws credentaials >>> give access key and secret key
+note: accesskey and secret key get from IAM user create you will see...
+
+# to setup email
 
 
 
