@@ -20,7 +20,7 @@
 REVERT CASE
 ------------
 
-* Make abc.txt file. Write hello as content and commit. Now make change in that file write hello there and commit it again. Now you want previous version with  hello only. Command is ‘git log’ where you find abc.txt file. Copy the first 8 digit of 40 degit hexadecimal code. Then, git checkout pest that 8 digit code filename. Now if you cat abc.txt you will see only hello.
+Make abc.txt file. Write hello as content and commit. Now make change in that file write hello there and commit it again. Now you want previous version with  hello only. Command is ‘git log’ where you find abc.txt file. Copy the first 8 digit of 40 degit hexadecimal code. Then, git checkout pest that 8 digit code filename. Now if you cat abc.txt you will see only hello.
 OR  git log --oneline > it will show first line. Then git revert paste seven digit of code. Now : you cat abc.txt you will see hello only. Now if you want to go back again >> git revert HEAD > it will show hello there again.
 
 NOTE: to go the previous commit>> git reset commit id --hard
