@@ -21,6 +21,8 @@ Deploy .jar or .war file to another server or S3 bucket
 * To deploy artifacts to target server >>> choose ssh agent in pipeline syntax >>> add key >>> ssh usernamewith private key >>> Id and Desctiption can be anything >>> user should be the user of target server i,e, ec2-user or deployuser
 * Then, do Keygen in agent machine or another fresh mac terminal >>>> copy public key to .ssh/authorized_keys in target machine>>> give 600 permission to authorized_keys and 700 to .ssh
 
+* command will be like this >>>> sh "scp -o StrictHostKeyChecking=no target/my-app-1-RELEASE.jar ec2-user@3.82.47.15:/home/ec2-user"
+
 ## SECOND: deploy to S3 bucket
 * add some plugin in managejenkins>>manage plugings
 - amazon ec2 plugin
@@ -32,8 +34,12 @@ Now,
 * choose withcredential:bind credential... in pipeline syntax >>> bindings >>> add >>> aws access key and secret key >> add key >>> choose aws credentaials >>> give access key and secret key
 note: accesskey and secret key get from IAM user create you will see...
 
-# to setup email
+* command will be like this: withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-secrect-key', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']])
+sh "aws s3 cp target/my-app-1-RELEASE.jar s3://ghimire-bucket/"
 
+# To setup email
+* install mutt in agent machine >>>> sudo yum install -y mutt
+* and choose timeout in pipeline syntax
 
 
 
