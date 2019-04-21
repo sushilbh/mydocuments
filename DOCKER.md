@@ -60,7 +60,7 @@ DOCKER
 * docker volume prune >> removing dangling volume
 
 Dockerfile:
--------------
+-
 1. Make one dir.  >> mkdir Dockerfile >>> vim Dockerfile
 2.  FROM ubuntu
 	MAINTAINER ram <ram@gmail.com>
@@ -71,7 +71,7 @@ Dockerfile:
 5.  docker run image1 or image id >>> to run docker container
 
 Docker Compose: (it is use for running multi container)
------------------------------------------------------------
+-
 1. docker-compose version >> show the version
 2.  Create docker compose file default is docker-compose.yml
 3.   mkdir docker-compose.yml >> vim docker-compose.yml   
@@ -90,11 +90,11 @@ Docker Compose: (it is use for running multi container)
 Run docker-compose config
 
 How to scale services:
-----------------------------
+-
 docker-compose up -d --scale database=4 >> it will create 4 database images. If you do docker ps you will see 4 container running.
 
 Docker volume:
------------------------------
+-
 Decoupling container from storage
 Share volume (storage/data) among different containers
 Attach volume to containers
@@ -107,6 +107,7 @@ On deleting container volume does not delete.
 5. Docker volume rm myvolume >>> to remove volume
 
 Use of Docker volume to create container:
+-
 
 * docker container create --name jenkinsrun -it --mount source=myvol1,target=/demo-test jenkins
 
@@ -119,5 +120,5 @@ Use of Docker volume to create container:
 Docker run -name myjenkins1 -v myvolume:/var/jenkins_home -p 9090:8080 -p 60000:50000 jenkins >> it will also run and it will have same job inside jenkins. 
 
 Docker swarm
---------------
+-
 
