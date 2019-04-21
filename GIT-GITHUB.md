@@ -52,3 +52,14 @@ MERGE CONFLIT
 Note: deleting remote branch in github from cli/terminal
 -------------------------------------------------------
 * git push origin --delete branchname
+
+
+Migration to another server
+-
+* git pull from existing repo
+* Add and commit
+* git remote add target <url of target server>
+* Git push target
+
+
+
