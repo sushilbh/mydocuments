@@ -4,20 +4,23 @@ Prerequesite >>>jdk
 ---------------------
 
 INSTALLATION OF TOMCAT 
-1. go to url> search for tomcat 8 download> copy link address of tomcat tar.gz file>  wget <link> untar the file> 
-sudo tar -zxvf apche tomcat ….> go inside apche>  bin> there is startup.sh and shutdown.sh file
-Check if tomcat is started or not
+
+* go to url> search for tomcat 8 download> copy link address of tomcat tar.gz file>  wget <link> untar the file> 
+* sudo tar -zxvf apche tomcat ….> go inside apche>  bin> there is startup.sh and shutdown.sh file
+* Check if tomcat is started or not
 ps -ef | grep tomcat
-Give change the privilege >> chmod +x startup.sh
+* Give change the privilege >> chmod +x startup.sh
                    				  chmod +x shutdown.sh
-To start tomcat go inside  bin and execute the command >> ./startup.sh 
- To shutdown tomcat go inside bin and execute the command >> ./shutdown.sh 
-Now to start from outside add the path of the Tomcat
+* To start tomcat go inside  bin and execute the command >> ./startup.sh 
+* To shutdown tomcat go inside bin and execute the command >> ./shutdown.sh 
+* Now to start from outside add the path of the Tomcat
 ln -s /opt/apache-tomcat-8.5.31/bin/startup.sh  /usr/local/bin/tomcatup
+
 Where, ln (lowercase L) -s is command
                 /opt/apache-tomcat-8.5.31/bin/startup.sh >> tomcat path
               /usr/local/bin/ >>> adding path here 
              tomcatup >> givenname to start tomcat
+
 For, shutdown,  ln -s /opt/apache-tomcat-8.5.31/bin/shutdown.sh  /usr/local/bin/tomcatdown
  Apache tomcat run default port in 8080 but jenkins also run in 8080 so to change the tomcat port>>>
 Go inside >> opt/apache-tomcat-8.5.31/conf/server.xml
