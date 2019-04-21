@@ -35,7 +35,7 @@ Now,
 note: accesskey and secret key get from IAM user create you will see...
 
 * command will be like this: withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-secrect-key', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']])
-sh "aws s3 cp target/my-app-1-RELEASE.jar s3://ghimire-bucket/"
+* sh "aws s3 cp target/my-app-1-RELEASE.jar s3://ghimire-bucket/"
 
 # To setup email
 * install mutt in agent machine >>>> sudo yum install -y mutt
