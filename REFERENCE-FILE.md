@@ -1,5 +1,5 @@
 IMPORTANT REFERENCE
-============================================================================================
+-
 Download files from server to your local machine (stay in local machine where your aws key is ie, download or desktop)
 scp -i ramhari.pem -r ec2-user@IP:/home/ec2-user/ansible1 .
 Where,
