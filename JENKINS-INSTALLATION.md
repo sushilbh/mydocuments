@@ -1,4 +1,4 @@
-#### JENKINS INSTALLATION
+JENKINS INSTALLATION
 
 Installation of OpenJDK
 -
