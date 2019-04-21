@@ -1,16 +1,18 @@
 IMPORTANT REFERENCE
 -
-Download files from server to your local machine (stay in local machine where your aws key is ie, download or desktop)
-scp -i ramhari.pem -r ec2-user@IP:/home/ec2-user/ansible1 .
-Where,
-scp -i >>>command
-ramhari.pem >>key name
- -r >>> for folder no need for file
- ec2-user >>> name of the user
-Ip >>public ip of the machine from where you want to download the files/folder
-: >>>colon
-/home/ec2-user/   >>>>> path of the folder/file
-ansible1 >>>> is the folder you want to download
+Download files from server to your local machine 
+-
+* (stay in local machine where your aws key is ie, download or desktop)
+* scp -i ramhari.pem -r ec2-user@IP:/home/ec2-user/ansible1 .
+*Where,
+ **scp -i >>>command
+**ramhari.pem >>key name
+** -r >>> for folder no need for file
+** ec2-user >>> name of the user
+** Ip >>public ip of the machine from where you want to download the files/folder
+** : >>>colon
+** /home/ec2-user/   >>>>> path of the folder/file
+** ansible1 >>>> is the folder you want to download
 
 
 
