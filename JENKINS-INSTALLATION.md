@@ -56,8 +56,8 @@ After package state you will perform following steps
 2. Junit test >>> target/surefire-reports/*.xml OR **/target/surefire-reports/*.xml
 3. Generate surefire reports(you can add in test step also or can create new stage) this will create site dir inside target dir 
 4. Now publish that surefire report in html. For that install html publish plugin in (pipeline manage plugin) then HTML directory to archive
-HTML directory to archive>>>target/site/
-Index page[s]>>>surefire-report.html
+5. HTML directory to archive>>>target/site/
+6. Index page[s]>>>surefire-report.html
 
 
 
