@@ -6,17 +6,15 @@ Prerequesite >>>jdk
 INSTALLATION OF TOMCAT 
 
 * go to url> search for tomcat 8 download> copy link address of tomcat tar.gz file>  wget <link> untar the file> 
-* sudo tar -zxvf apche tomcat ….> go inside apche>  bin> there is startup.sh and shutdown.sh file
-* Check if tomcat is started or not
-ps -ef | grep tomcat
-* Give change the privilege >> chmod +x startup.sh
-                   				  chmod +x shutdown.sh
-* To start tomcat go inside  bin and execute the command >> ./startup.sh 
-* To shutdown tomcat go inside bin and execute the command >> ./shutdown.sh 
-* Now to start from outside add the path of the Tomcat
+* sudo tar -zxvf apche tomcat ….> go inside apche>>  bin>> there is startup.sh and shutdown.sh file
+* Check if tomcat is started or not >>>> ps -ef | grep tomcat
+* Give change the privilege >>> chmod +x startup.sh >>>> chmod +x shutdown.sh
+* To start tomcat go inside  bin and execute the command >>> ./startup.sh 
+* To shutdown tomcat go inside bin and execute the command >>> ./shutdown.sh 
+* Now to start from outside add the path of the Tomcat >>>
 ln -s /opt/apache-tomcat-8.5.31/bin/startup.sh  /usr/local/bin/tomcatup
 
-Where, ln (lowercase L) -s is command
+**Where, ln (lowercase L) -s is command
                 /opt/apache-tomcat-8.5.31/bin/startup.sh >> tomcat path
               /usr/local/bin/ >>> adding path here 
              tomcatup >> givenname to start tomcat
