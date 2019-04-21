@@ -14,10 +14,10 @@ INSTALLATION OF TOMCAT
 * Now to start from outside add the path of the Tomcat >>>
 ln -s /opt/apache-tomcat-8.5.31/bin/startup.sh  /usr/local/bin/tomcatup
 
-**Where, ln (lowercase L) -s is command
-                /opt/apache-tomcat-8.5.31/bin/startup.sh >> tomcat path
-              /usr/local/bin/ >>> adding path here 
-             tomcatup >> givenname to start tomcat
+** Where, ln (lowercase L) -s is command 
+              **  /opt/apache-tomcat-8.5.31/bin/startup.sh >> tomcat path
+              ** /usr/local/bin/ >>> adding path here 
+             ** tomcatup >> givenname to start tomcat
 
 For, shutdown,  ln -s /opt/apache-tomcat-8.5.31/bin/shutdown.sh  /usr/local/bin/tomcatdown
  Apache tomcat run default port in 8080 but jenkins also run in 8080 so to change the tomcat port>>>
