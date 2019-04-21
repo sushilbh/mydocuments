@@ -52,6 +52,7 @@ DOCKER
 * docker rmi $(docker images -a -q) >> removing all images
 * docker ps -a >> show the list of all container
 * docker rm ID_or_Name ID_or_Name >> removing a container
+* docker 
 * docker ps -a -f status=exited >> list all exited container
 * docker rm $(docker ps -a -f status=exited -q) >> remove all exited container
 * docker rm -f container id >>> to remove running container
