@@ -28,17 +28,15 @@ Transfer file from local machine to server:
 ** : >>colon
 ** /tmp >>>>you want to move under tmp dir.
 
--
-
 Give root level privilege to deployuser
+-
 sudo useradd deployuser
 cd /etc/sudoers.d >>>  go inside this file
 vi deployuser >>> create deployuser file 
 deployuser    ALL=(ALL)    NOPASSWD:ALL
 
-------------------------------------------------------------------------------------------------------
 Ansible
-
+-
 Ansible -I hosts db -a “yum install -y git” -k --sudo
 ansible -I hosts db -a “git --version” -k --sudo
 
