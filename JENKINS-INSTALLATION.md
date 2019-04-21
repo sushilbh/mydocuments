@@ -1,8 +1,7 @@
-How-to articles
-===============
-##JENKINS
-—————
+#### JENKINS INSTALLATION
+
 Installation of OpenJDK
+-
 1. Install the OpenJDK 8:
 2. sudo yum install java-1.8.0-openjdk
 3. If you have more than one Java version installed on your system use the following command to switch versions:
