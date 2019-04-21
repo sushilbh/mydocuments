@@ -28,7 +28,8 @@ Deploy .jar or .war file to another server or S3 bucket
 - amazon ec2 plugin
 - amazon S3 bucket credential
 - aws global config plugin
-* Install aws CLI and config it
+* Install aws CLI and config it, use below url to install cli
+* https://docs.aws.amazon.com/cli/latest/userguide/install-bundle.html
 Now,
 * create s3 bucket
 * choose withcredential:bind credential... in pipeline syntax >>> bindings >>> add >>> aws access key and secret key >> add key >>> choose aws credentaials >>> give access key and secret key
