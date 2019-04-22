@@ -27,11 +27,16 @@
 
 
 
-######OR FOLLOW FOLLOWING LINK#####
+## OR FOLLOW FOLLOWING LINK
 https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
-....
 
-DOCKER
+## pushing images to dockerhub
+* docker tag afbbea07a7c7 ramharig/demo:maven >>> change image tag name latest to maven
+* docker login >>> give docker credentials
+* docker push ramharig/demo:maven  >>>> where, ramharig is dockerhub user, demo is repo name and maven is tag name
+
+
+## DOCKER
 
 **Purging All Unused or Dangling Images, Containers, Volumes, and Networks
 
