@@ -34,6 +34,10 @@ https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 * docker tag afbbea07a7c7 ramharig/demo:maven >>> change image tag name latest to maven (where, afbbea07 is image id)
 * docker login >>> give docker credentials
 * docker push ramharig/demo:maven  >>>> (where, ramharig is dockerhub user, demo is repo name and maven is tag name)
+* mv ngrok-stable-darwin-386.zip /usr/local/bin/
+* cd /usr/local/bin/
+* unzip ngrok-stable-darwin-386.zip
+* ngrok http 8081
 
 
 ## DOCKER
