@@ -41,7 +41,7 @@ When you add files into index but before commit and you need a clean working dir
 * git stash apply	>>> You will get old record
 * git stash drop	>>> When you done with the stashed item or want to remove from list run git stash drop command.
 
-MERGE CONFLIT
+MERGE CONFLICT
 --------------
 * git pull --rebase origin master 	
 * git status	>>> To see where the conflict is
