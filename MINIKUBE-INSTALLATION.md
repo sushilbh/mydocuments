@@ -30,3 +30,20 @@ NOTE: you will find below error because you don’t have setup k8s instance
 
 minikube stop; minikube delete
 
+## minikube commands
+* minikube start >>> start minikube
+1. kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/hello-node
+2. Kubectl proxy>>>>>>>>127.0.0.1:8001 and open another terminal and execute <minikube dashboard> commands it will open
+3. Minikube dashboard >>>>>>>http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+* Minikube status >>> check status
+* minikube stop >>> stop minikube
+* kubectl get deployments >>> check deployments
+* kubectl get pods >>> check pods
+* kubectl delete deployment <deployment name> >>> delete deployments
+* kubectl delete pods <pod name> >>> to delete pod
+* kubectl get svc 
+* kubectl logs <pod name>
+* kubectl describe svc <pod name>
+* kubectl apply -f <filename.yml>
+* kubectl apply -f <github url>
