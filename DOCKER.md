@@ -131,4 +131,7 @@ Docker run -name myjenkins1 -v myvolume:/var/jenkins_home -p 9090:8080 -p 60000:
 
 Docker swarm
 -
-
+install and edit inside conatiner
+-
+* apt-get update
+* apt-get install vim
