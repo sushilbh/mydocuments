@@ -1,11 +1,11 @@
-#### INSTALLING KUBERNETES
+## INSTALLING KUBERNETES
 
-## Installation of home-brew on Mac
+#### Installation of home-brew on Mac
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
 
-## Installation of kubectl
+#### Installation of kubectl
 1. curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
 2. chmod +x ./kubectl
 3. sudo mv ./kubectl /usr/local/bin/kubectl
@@ -16,7 +16,7 @@ NOTE: you will find below error because you don’t have setup k8s instance
 * The connection to the server localhost:8080 was refused - did you specify the right host or port?
 
 
-## Installation of minikube
+#### Installation of minikube
 1.  brew install hyperkit
 2. curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-hyperkit \
 && sudo install -o root -g wheel -m 4755 docker-machine-driver-hyperkit /usr/local/bin/
@@ -26,15 +26,14 @@ NOTE: you will find below error because you don’t have setup k8s instance
 6. Minikube start
 
 
-## Uninstall minikube
+#### Uninstall minikube
 
 minikube stop; minikube delete
 
-## minikube commands
+#### minikube commands
 * minikube start >>> start minikube
-1. kubectl create deployment hello-node --image=gcr.io/hello-minikube-zero-install/hello-node
-2. Kubectl proxy>>>>>>>>127.0.0.1:8001 and open another terminal and execute <minikube dashboard> commands it will open
-3. Minikube dashboard >>>>>>>http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+1. Kubectl proxy >>> open another terminal and execute <minikube dashboard> command it will open
+2. Minikube dashboard >>>http://127.0.0.1:51863/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/
 
 * Minikube status >>> check status
 * minikube stop >>> stop minikube
@@ -47,3 +46,6 @@ minikube stop; minikube delete
 * kubectl describe svc <pod name>
 * kubectl apply -f <filename.yml>
 * kubectl apply -f <github url>
+
+
+
