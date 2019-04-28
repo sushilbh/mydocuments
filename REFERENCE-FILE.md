@@ -79,4 +79,9 @@ Ansible
 ** Ip of target machine >>> is target machine public IP
 
 
-*remote_src: true >>> to move file from one destination to another destionation in target machine
+* remote_src: true >>> to move file from one destination to another destionation in target machine
+## install and edit inside conatiner
+* apt-get update
+* apt-get install vim
+
+
