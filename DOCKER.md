@@ -31,7 +31,7 @@
 https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 
 ## pushing images to dockerhub
-* docker tag afbbea07a7c7 ramharig/demo:maven >>> change image tag name latest to maven (where, afbbea07 is image id)
+* docker tag afbbea07a7c7 ramharig/demo:maven >>> change image tag name latest to maven (where, afbbea07 is image id and maven is tag name)
 * docker login >>> give docker credentials
 * docker push ramharig/demo:maven  >>>> (where, ramharig is dockerhub user, demo is repo name and maven is tag name)
 * mv ngrok-stable-darwin-386.zip /usr/local/bin/
