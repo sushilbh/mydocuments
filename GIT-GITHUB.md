@@ -18,7 +18,7 @@
 * git push origin master	>>> Staty in master if yu want to push file in master branch in remote server.
 
 REVERT CASE
-------------
+--
 
 Make abc.txt file. Write hello as content and commit. Now make change in that file write hello there and commit it again. Now you want previous version with  hello only. Command is ‘git log’ where you find abc.txt file. Copy the first 8 digit of 40 degit hexadecimal code. Then, git checkout pest that 8 digit code filename. Now if you cat abc.txt you will see only hello.
 OR  git log --oneline > it will show first line. Then git revert paste seven digit of code. Now : you cat abc.txt you will see hello only. Now if you want to go back again >> git revert HEAD > it will show hello there again.
@@ -30,7 +30,7 @@ NOTE: to go the previous commit>> git reset commit id --hard
 * git log –author=”author name” 	>>> It will show the commit made by author
 
 STASH
--------
+-
 
 Stash takes the current state of the working directory & index and puts in stack for later and gives you back a clean working directory. If you are middle of something and want to jump to another task and don’t want to lose your current edits.
 When you add files into index but before commit and you need a clean working directory
