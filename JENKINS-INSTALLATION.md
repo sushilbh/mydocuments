@@ -39,6 +39,22 @@ Maven Installation (In order to run maven java should be installed)
 * PATH=$PATH:/opt/apache-maven-3.6.0/bin
 * echo $PATH >>> to check whole path
 
+Add path for only one user like ec2-user
+-
+go inside .bashrc and add following path
+export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+
+NOW, after you add path exit in terminal and reconnect machine again.
+
+OR add path for all user
+-
+* Go to >> /etc/profile.d/     
+* create something called env.sh and add following path.
+* export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+
+NOTE: .bashrc is for local user and profile.d is for all users
+
+
 JENKINS
 
 * If you forget password Jenkins Home >>> /var/lib/jenkins>>config.xml>>> go inside and find security>> use security is true make it false and restart jenkins.
