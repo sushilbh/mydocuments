@@ -8,7 +8,7 @@ Installing Jrog Artifactory inside container
 * To start an Artifactory container, use the corresponding command below according to whether you are running Artifactory Pro or Artifactory OSS: below is for oss
 * docker run --name artifactory -d -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss:latest
 
-There are 3 types of repo
+There are 3 types of repos
 -
 1. local repository >> where your artifactory is stored, when you push docker images it will come to local
 2. remote repository >> it will have excess of internet
