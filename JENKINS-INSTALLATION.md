@@ -53,6 +53,7 @@ OR add path for all user
 * export PATH=$PATH:/opt/apache-maven-3.6.0/bin
 
 NOTE: .bashrc is for local user and profile.d is for all users
+-
 
 
 JENKINS
