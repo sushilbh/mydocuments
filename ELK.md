@@ -1,4 +1,4 @@
-#### ELK
+## ELK
 
 * elastic-search default port >>> 9200
 * Logstash  default port >>>9600
@@ -14,6 +14,7 @@ ELK run from docker
 * Localhost:9200
 
 Elasticsearch
+-
 *  Real time distributed and analytic engine>>java language>>document based>> instead tables and schemas>> for single page application
 * Query/Analyze>>>it let you undarsand billions of log lines easily>> can query both structured and unstructured, geo, metric etc.
 * You can aggregate data by days>>>you can track files
@@ -24,10 +25,12 @@ Prerequisites:
 * Click on Download to get the zip file
 * Unzip the file
 * goto bin folder from command line and execute >>>>> bin/elasticsearch >>>>> file will open and goto local host and port is 5601>>>json file will open
-* 
+
 For kibana
-Goto kibana folder>>bin>>and execute >>>bin/kibana
+-
+* Goto kibana folder>>bin>>and execute >>>bin/kibana
 
 
 For Logstash
-./bin/logstash -f cars.config 
+-
+* ./bin/logstash -f cars.config 
