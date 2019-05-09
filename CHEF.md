@@ -1,9 +1,9 @@
 #### installlation of chef server
-...............
-manage.chef.io
-	create an account
-download chef-starter and push it into github repo
-(doto download-> git clone repo-> copy the chef folder into that repo-> git add, commit and push)
+* goto url <manage.chef.io>
+	* create an account
+* download chef-starter and push it into github repo
+	 
+(goto download-> git clone repo-> copy the chef folder into that repo-> git add, commit and push)
 
 2. workstation (local machine)
 ...............
