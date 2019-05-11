@@ -6,6 +6,13 @@
 	 
 (goto download-> git clone repo-> copy the chef folder into that repo-> git add, commit and push)
 
+
+1. chef server
+...............
+manage.chef.io
+	create an account
+download chef-starter and push it into github repo
+
 2. workstation (local machine)
 ...............
 download chefdk
@@ -19,9 +26,14 @@ goto cmd
 .........................
 knife ssl fetch
 knife ssl check
+
+bootstrap for windows machine
+..............................
 knife bootstrap windows winrm [client-ip/hostname] -N [node-name/hostname/anyname] -x [username/login name] -P [password]
-knife bootsrap <ip> --ssh-user ec2-user --sudo --identity-file ~/.ssh/Feb.pem if ec2
-knife bootstrap node_domain_or_IP -x username -i samekey -N chef_name_you_want --sudo
+
+bootstrap for linux machine
+.............................
+knife bootstrap <node-IP> -N <node-name> --ssh-user ec2-user --sudo --identity-file ~/Downloads/awskey.pem -y
 
 
 aeHe&*pEQMrP(nJ(XsoRit8sX(X2&ajh
@@ -34,6 +46,13 @@ knife bootstrap windows winrm "3.95.162.147" -N "windows" -x "Administrator" -P 
 	client-server/remote desktop-> firewall-> advanced-> public off
 
 6. knife node list
+knife node show <node-name> ->
+knife node edit <node-name>
+export "EDITOR=nano" (it will allow you to edit the file)
+
+goto /cookbooks folder (to create a new cookbook)
+chef generate cookbook <cookbook-name>
+cd <cookbook-name>
 
 ............................................................
 
@@ -44,6 +63,3 @@ more metadata.rb
 vi metadata.rb
 ls
 mv dir.rb chef-repo/cookbooks/test/recipies/default.rb
-
-knife search node "platform:centos"
-	will list all the centos servers
