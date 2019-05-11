@@ -1,6 +1,7 @@
 #### installlation of chef server
 * goto url <manage.chef.io>
 	* create an account
+* if you delete starter kit >>>once you go inside your account >>> goto orginazation>> manage orgn>>choose orgn name>>you will see starter kit
 * download chef-starter and push it into github repo
 	 
 (goto download-> git clone repo-> copy the chef folder into that repo-> git add, commit and push)
