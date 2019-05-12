@@ -33,7 +33,7 @@ knife bootstrap windows winrm [client-ip/hostname] -N [node-name/hostname/anynam
 
 bootstrap for linux machine
 .............................
-knife bootstrap <node-IP> -N <node-name> --ssh-user ec2-user --sudo --identity-file ~/Downloads/awskey.pem -y
+knife bootstrap <node-IP> -N <node-name> --ssh-user ec2-user --sudo --identity-file ~/Downloads/ramhari.pem -y
 
 
 aeHe&*pEQMrP(nJ(XsoRit8sX(X2&ajh
