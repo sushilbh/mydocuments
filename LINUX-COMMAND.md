@@ -17,7 +17,7 @@
 * mv mydir myfirstdir	>>> Rename mydir to myfirstdir
 
 MAKING  USERS AND GROUPS
----------------------------
+-
 * useradd superman	>>> Make superman  as user
 * cat /etc/passwd	>>> See the user
 * groupadd sperheros 	>>> Make superheros as group                                  g = primary group , G = secondary group
@@ -40,3 +40,14 @@ MAKING  USERS AND GROUPS
 * kill  -19	>>> Pause the processor
 * Kill -18 	>>> Resume the processor 
 * Ps	>>>>> To see all processor
+
+check os version in Linux
+-
+1. cat /etc/os-release
+2. hostnamectl
+
+check Linux karnel Version
+-
+* uname -a
+* unmae -r
+
