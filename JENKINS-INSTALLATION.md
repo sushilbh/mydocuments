@@ -6,9 +6,10 @@ step 1: Installation of OpenJDK
 1. Install the OpenJDK 8:
 2. sudo yum install java-1.8.0-openjdk
 3. If you have more than one Java version installed on your system use the following command to switch versions:
-4. sudo alternatives --config java
-5. Make sure your system is using the correct JDK:
-6. java -version 
+4. sudo alternatives --install /usr/bin/java java /opt/jdk..../bin/java 1
+5. sudo alternatives --config java
+6. Make sure your system is using the correct JDK:
+7. java -version 
 
 step2: Installation of Jenkins
 -
