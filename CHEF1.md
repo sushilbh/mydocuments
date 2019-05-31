@@ -1,4 +1,4 @@
-#### <chef commands>
+#### chef command
 
 1. command to install clint software --->curl -L https://www.opscode.com/chef/install.sh | bash
 2. vi dir.rb
